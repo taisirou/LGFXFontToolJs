@@ -259,8 +259,8 @@ function planGfx(font) {
     if (g.xAdvance < 0 || g.xAdvance > 255) {
       err('XADVANCE_RANGE', { value: g.xAdvance, min: 0, max: 255 });
     }
-    if (g.xOffset < -128 || g.xOffset > 127 || g.yOffset < -128 || g.yOffset > 127) {
-      err('BEARING_RANGE', { x: g.xOffset, y: g.yOffset, min: -128, max: 127 });
+    if (g.xOffset < -256 || g.xOffset > 254 || g.yOffset < -256 || g.yOffset > 254) {
+      err('BEARING_RANGE', { x: g.xOffset, y: g.yOffset, min: -256, max: 254 });
     }
     if (g.bitmap.width > 255 || g.bitmap.height > 255) {
       err('GLYPH_TOO_LARGE', { width: g.bitmap.width, height: g.bitmap.height, max: 255 });
