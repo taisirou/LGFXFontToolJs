@@ -57,7 +57,7 @@
   "bugs": {
     "url": "https://github.com/tanakamasayuki/LGFXFontToolJs/issues"
   },
-  "homepage": "https://tanakamasayuki.github.io/LGFXFontToolJs/",
+  "homepage": "https://taisirou.github.io/LGFXFontToolJs/",
   "scripts": {
     "test": "node --test \"test/*.test.js\"",
     "test:watch": "node --test --watch \"test/*.test.js\"",
